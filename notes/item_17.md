@@ -69,8 +69,8 @@
   
 ```typescript
     function parseTaggedText(lines: string[]): string[][] {
+        const currPara: readonly string[] = [];
         const paragraphs: string[][] = [];
-        const currPara: string[] = [];
         // let currPara: readonly string[] = [];
 
         const addParagraph = () => {
